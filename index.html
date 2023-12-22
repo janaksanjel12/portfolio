@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag for responsiveness -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Portfile </title>
+<meta charset="UTF-8">
+<title>Portfile </title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('back.png');
+  }
+  h1, h2 {
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #4a90e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  .section {
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+  }
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #f3f3f3;
+    
+  }
+  .animated-text {
+    animation: fadeIn 2s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Additional Styling for Links */
+  a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  a:hover {
+    color: #2a6496;
+  }
+
+  .project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    color: #4a90e2;
+  }
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  .project-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4a90e2;
+  }
+  .project-description {
+    font-size: 16px;
+    color: #333;
+  }
+  /* New Animation for Cards */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .animated-card {
+    animation: slideIn 1s forwards;
+  }
+
+  @media only screen and (max-width: 768px) {
+      body {
+        margin: 20px;
+      }
+      h1, h2 {
+        font-size: 24px;
+      }
+      .profile-pic {
+        max-width: 150px;
+      }
+      .project-card {
+        padding: 15px;
+      }
+      .project-title {
+        font-size: 18px;
+      }
+      .project-description {
+        font-size: 14px;
+      }
+    }
+
+    /* Tablet Responsive Styles (Optional) */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      body {
+        margin: 30px;
+      }
+      h1, h2 {
+        font-size: 28px;
+      }
+    }
+</style>
+</head>
+<body>
+
+
+
+<!-- Profile Picture Section -->
+<div>
+<img src="my.png" alt="Profile Picture" class="profile-pic animated-text">
+<h1>Hey I`m Janak Sanjel :) </h1>
+</div>
+<div class="section">
+  <ul>
+    <!-- Fill in your details below -->
+    <li><strong>Email:</strong> janaksanjel12@gmail.com</li>
+    <!-- LinkedIn with Icon -->
+    <li><strong>LinkedIn:</strong> 
+      <a href="https://www.linkedin.com/in/janak-sanjel-a11427283/">
+        <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+        Janak's LinkedIn Profile
+      </a>
+    </li>
+    <!-- GitHub with Icon -->
+    <li><strong>GitHub:</strong> 
+      <a href="https://github.com/janaksanjel12">
+        <i class="fab fa-github"></i> <!-- GitHub Icon -->
+        Janak's GitHub Profile
+      </a>
+    </li>
+    <li><strong>Location:</strong> Lalitpur, Nepal</li>
+    <li><strong>Availability:</strong> Full-time</li>
+  </ul>
+</div>
+
+
+<div class="section">
+  <h2 class="section-title">Projects</h2>
+  
+  <!-- Using Flexbox for side-by-side layout -->
+  <div style="display: flex; flex-direction: row;">
+
+    <!-- First Project Card -->
+    <div class="project-card animated-card" style="margin-right: 20px;"> <!-- Added margin for spacing -->
+      <!-- Project Logo -->
+    <center>
+      <img src="evs.png" alt="Electronics Voting System Logo" style="max-width: 500px; margin-bottom: 20px;">
+      
+      <!-- Project Title with Link -->
+      <h3 class="project-title">
+          <a href="https://github.com/janaksanjel12/ElectronicsVotingSystem" target="_blank" rel="noopener noreferrer">Electronics Voting System</a>
+      </h3>
+    </center>
+      <!-- Project Description -->
+      <p class="project-description">An electronic voting system is a web-based application for casting ballots online.<br> It aims to make the voting process easier, faster, and more accessible.<br> The project aims to develop a simple electronic voting system for colleges and schools.</p>
+    </div>
+
+    <!-- Second Project Card -->
+    <div class="project-card animated-card">
+      <!-- Project Logo for Table Tennis Game -->
+      <center>
+      <img src="tt.webp" alt="Table Tennis Game Logo" style="max-width: 200px; margin-bottom: 10px;">
+
+      <!-- Project Title with Link for Table Tennis Game -->
+      <h3 class="project-title">
+          <a href="https://github.com/janaksanjel12/Table-Tennis-game-code-by-janak" target="_blank" rel="noopener noreferrer">Table-Tennis-Game</a>
+      </h3>
+    </center>
+      <!-- Project Description for Table Tennis Game -->
+      <p class="project-description"> 
+        Creating a simple Table Tennis game in Java involves several <br> components  like game loop, rendering, collision detection, and user input<br> handling. Below is a basic outline and some sample code snippets to give <br> you an idea of how you can implement a simple Table Tennis game using Java.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- Footer Section -->
+<footer>
+  <center>
+    <p>Made by Janak Sanjel</p>
+  </center>
+</footer>
+
+</body>
+</html>
